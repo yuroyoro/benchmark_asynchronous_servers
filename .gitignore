@@ -1,3 +1,4 @@
+*.pyc
 finagle/lib_managed/
 finagle/project/boot/
 finagle/target/
