@@ -1,0 +1,282 @@
+[root@ip-10-150-102-243 ec2-user]# echo tornado
+tornado
+[root@ip-10-150-102-243 ec2-user]# ./bench.sh
+start
+bench 1
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ec2-176-32-77-37.ap-northeast-1.compute.amazonaws.com (be patient)
+Completed 800 requests
+Completed 1600 requests
+Completed 2400 requests
+Completed 3200 requests
+Completed 4000 requests
+Completed 4800 requests
+Completed 5600 requests
+Completed 6400 requests
+Completed 7200 requests
+Completed 8000 requests
+Finished 8000 requests
+
+
+Server Software:        gunicorn/0.13.4
+Server Hostname:        ec2-176-32-77-37.ap-northeast-1.compute.amazonaws.com
+Server Port:            8000
+
+Document Path:          /hogehogefooo
+Document Length:        36 bytes
+
+Concurrency Level:      2000
+Time taken for tests:   4.261 seconds
+Complete requests:      8000
+Failed requests:        0
+Write errors:           0
+Total transferred:      1296000 bytes
+HTML transferred:       288000 bytes
+Requests per second:    1877.48 [#/sec] (mean)
+Time per request:       1065.259 [ms] (mean)
+Time per request:       0.533 [ms] (mean, across all concurrent requests)
+Transfer rate:          297.02 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  329 886.1     11    3047
+Processing:     1  238 421.6     79    1729
+Waiting:        1  237 421.3     78    1726
+Total:         14  567 979.8     97    4186
+
+Percentage of the requests served within a certain time (ms)
+  50%     97
+  66%    223
+  75%    372
+  80%    595
+  90%   1871
+  95%   3087
+  98%   3138
+  99%   3757
+ 100%   4186 (longest request)
+bench 2
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ec2-176-32-77-37.ap-northeast-1.compute.amazonaws.com (be patient)
+Completed 800 requests
+Completed 1600 requests
+Completed 2400 requests
+Completed 3200 requests
+Completed 4000 requests
+Completed 4800 requests
+Completed 5600 requests
+Completed 6400 requests
+Completed 7200 requests
+Completed 8000 requests
+Finished 8000 requests
+
+
+Server Software:        gunicorn/0.13.4
+Server Hostname:        ec2-176-32-77-37.ap-northeast-1.compute.amazonaws.com
+Server Port:            8000
+
+Document Path:          /hogehogefooo
+Document Length:        36 bytes
+
+Concurrency Level:      2000
+Time taken for tests:   4.025 seconds
+Complete requests:      8000
+Failed requests:        0
+Write errors:           0
+Total transferred:      1296162 bytes
+HTML transferred:       288036 bytes
+Requests per second:    1987.68 [#/sec] (mean)
+Time per request:       1006.201 [ms] (mean)
+Time per request:       0.503 [ms] (mean, across all concurrent requests)
+Transfer rate:          314.50 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  350 906.7     14    3066
+Processing:     8  204 268.4     95    3054
+Waiting:        7  203 268.6     94    3050
+Total:         15  554 930.8    134    3420
+
+Percentage of the requests served within a certain time (ms)
+  50%    134
+  66%    318
+  75%    493
+  80%    630
+  90%   3025
+  95%   3117
+  98%   3253
+  99%   3290
+ 100%   3420 (longest request)
+bench 3
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ec2-176-32-77-37.ap-northeast-1.compute.amazonaws.com (be patient)
+Completed 800 requests
+Completed 1600 requests
+Completed 2400 requests
+Completed 3200 requests
+Completed 4000 requests
+Completed 4800 requests
+Completed 5600 requests
+Completed 6400 requests
+Completed 7200 requests
+Completed 8000 requests
+Finished 8000 requests
+
+
+Server Software:        gunicorn/0.13.4
+Server Hostname:        ec2-176-32-77-37.ap-northeast-1.compute.amazonaws.com
+Server Port:            8000
+
+Document Path:          /hogehogefooo
+Document Length:        36 bytes
+
+Concurrency Level:      2000
+Time taken for tests:   3.979 seconds
+Complete requests:      8000
+Failed requests:        0
+Write errors:           0
+Total transferred:      1297620 bytes
+HTML transferred:       288360 bytes
+Requests per second:    2010.48 [#/sec] (mean)
+Time per request:       994.785 [ms] (mean)
+Time per request:       0.497 [ms] (mean, across all concurrent requests)
+Transfer rate:          318.46 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  334 915.7     10    3050
+Processing:     2  179 274.3     71    1872
+Waiting:        2  178 274.2     69    1871
+Total:         13  513 929.9    102    3695
+
+Percentage of the requests served within a certain time (ms)
+  50%    102
+  66%    171
+  75%    342
+  80%    729
+  90%   3012
+  95%   3061
+  98%   3129
+  99%   3298
+ 100%   3695 (longest request)
+bench 4
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ec2-176-32-77-37.ap-northeast-1.compute.amazonaws.com (be patient)
+Completed 800 requests
+Completed 1600 requests
+Completed 2400 requests
+Completed 3200 requests
+Completed 4000 requests
+Completed 4800 requests
+Completed 5600 requests
+Completed 6400 requests
+Completed 7200 requests
+Completed 8000 requests
+Finished 8000 requests
+
+
+Server Software:        gunicorn/0.13.4
+Server Hostname:        ec2-176-32-77-37.ap-northeast-1.compute.amazonaws.com
+Server Port:            8000
+
+Document Path:          /hogehogefooo
+Document Length:        36 bytes
+
+Concurrency Level:      2000
+Time taken for tests:   4.501 seconds
+Complete requests:      8000
+Failed requests:        0
+Write errors:           0
+Total transferred:      1296000 bytes
+HTML transferred:       288000 bytes
+Requests per second:    1777.23 [#/sec] (mean)
+Time per request:       1125.348 [ms] (mean)
+Time per request:       0.563 [ms] (mean, across all concurrent requests)
+Transfer rate:          281.16 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  445 1007.6     37    3166
+Processing:     1  256 319.1    118    2868
+Waiting:        1  254 319.2    118    2866
+Total:         19  700 1029.1    214    3782
+
+Percentage of the requests served within a certain time (ms)
+  50%    214
+  66%    370
+  75%    790
+  80%    966
+  90%   3110
+  95%   3183
+  98%   3339
+  99%   3414
+ 100%   3782 (longest request)
+bench 5
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ec2-176-32-77-37.ap-northeast-1.compute.amazonaws.com (be patient)
+Completed 800 requests
+Completed 1600 requests
+Completed 2400 requests
+Completed 3200 requests
+Completed 4000 requests
+Completed 4800 requests
+Completed 5600 requests
+Completed 6400 requests
+Completed 7200 requests
+Completed 8000 requests
+Finished 8000 requests
+
+
+Server Software:        gunicorn/0.13.4
+Server Hostname:        ec2-176-32-77-37.ap-northeast-1.compute.amazonaws.com
+Server Port:            8000
+
+Document Path:          /hogehogefooo
+Document Length:        36 bytes
+
+Concurrency Level:      2000
+Time taken for tests:   3.732 seconds
+Complete requests:      8000
+Failed requests:        0
+Write errors:           0
+Total transferred:      1296162 bytes
+HTML transferred:       288036 bytes
+Requests per second:    2143.58 [#/sec] (mean)
+Time per request:       933.019 [ms] (mean)
+Time per request:       0.467 [ms] (mean, across all concurrent requests)
+Transfer rate:          339.16 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  247 761.3     12    3055
+Processing:     8  226 379.6     83    2775
+Waiting:        8  225 379.7     81    2775
+Total:         19  473 836.9    104    3379
+
+Percentage of the requests served within a certain time (ms)
+  50%    104
+  66%    249
+  75%    417
+  80%    653
+  90%   1100
+  95%   3076
+  98%   3142
+  99%   3343
+ 100%   3379 (longest request)
+end
+[root@ip-10-150-102-243 ec2-user]#
+
