@@ -3,7 +3,7 @@ var http = require('http'),
 
 var server = http.createServer(function(req, res) {
   res.writeHead(200, {'content-type': 'text/plain'});
-  res.end(url.parse(req.url)['pathname']);
+  res.end(url.parse(req.url)['pathname'] + "at" +  new Date);
 });
 
 server.listen(8000);

@@ -12,12 +12,12 @@ class Handler  < EventMachine::Connection
 
     res.status = 200
     res.content_type 'text/plain'
-    res.content = @http_path_info
+    res.content = @http_path_info + " at " + Time.now.to_s
     res.send_response
   end
 end
 
-EventMachine::run do # ちょっとした仕事
-  EventMachine::start_server("0.0.0.0", 8080, Handler)
-  puts "http server start, port 8080"
+EventMachine::run do
+  EventMachine::start_server("0.0.0.0", 8000, Handler)
+  puts "http server start, port 8000"
 end

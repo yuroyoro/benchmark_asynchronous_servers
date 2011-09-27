@@ -2,6 +2,7 @@ import tornado.httpserver
 import tornado.ioloop
 import tornado.options
 import tornado.wsgi
+import datetime
 
 from tornado.options import define, options
 
@@ -11,7 +12,7 @@ def echo_app(environ, start_response):
     status = "200 OK"
     response_headers = [("Content-type", "text/plain")]
     start_response(status, response_headers)
-    return [environ['PATH_INFO']]
+    return [environ['PATH_INFO'] +" at " +  datetime.datetime.now().strftime(u'%Y/%m/%d %H:%M:%S')]
 
 
 def main():

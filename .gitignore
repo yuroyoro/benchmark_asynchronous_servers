@@ -4,3 +4,8 @@ finagle/project/boot/
 finagle/target/
 finagle/project/plugins/src_managed/
 finagle/project/plugins/project/
+finagle/project/build/target/
+finagle/project/plugins/lib_managed/
+finagle/project/plugins/target/
+finagle/project/target/
+

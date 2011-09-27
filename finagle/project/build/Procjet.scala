@@ -29,5 +29,12 @@ class Project(info: ProjectInfo) extends StandardServiceProject(info)
   val thrift    = "thrift"    % "libthrift" % "0.5.0"
   val slf4jNop  = "org.slf4j" % "slf4j-nop" % "1.5.8" % "provided"
 
+  // javaOptions in run += "-Xmx8G"
+  // override def fork = forkRun("-Xmx6G" :: Nil)
+  // override def fork = Some(new ForkScalaRun {
+    // override def runJVMOptions = super.runJVMOptions ++ Seq("-Xmx4096m")
+    // override def scalaJars = Seq(buildLibraryJar.asFile,  buildCompilerJar.asFile)
+  // })
+
 }
 
