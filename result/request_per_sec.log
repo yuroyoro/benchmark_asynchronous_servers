@@ -38,3 +38,28 @@ tornado_m1.lerge.log:Requests per second:    1987.68 [#/sec] (mean)
 tornado_m1.lerge.log:Requests per second:    2010.48 [#/sec] (mean)
 tornado_m1.lerge.log:Requests per second:    1777.23 [#/sec] (mean)
 tornado_m1.lerge.log:Requests per second:    2143.58 [#/sec] (mean)
+
+c1x.lerge
+
+      node       tornado  eventmachien finagle
+ 1st  2601.85    2662.86  2558.44      3723.00
+ 2nd  2614.17    2807.76  2602.26      3768.27
+ 3rd  2642.03    2797.76  2632.91      3770.54
+ 4th  2639.18    2824.73  2603.36      2657.29
+ 5th  2704.67    2797.65  2614.49      2639.06
+ ave
+
+
+    node    tornado eventmachien finagle
+1st 2270.32 1877.48 2582.19      2294.70
+2nd 1798.75 1987.68 1720.71      2423.77
+3rd 1304.78 2010.48 2435.43      2415.71
+4th 1254.55 1777.23 2574.30      2603.82
+5th 1321.05 2143.58 2609.27      2590.74
+ave
+
+
+
+
+
+
