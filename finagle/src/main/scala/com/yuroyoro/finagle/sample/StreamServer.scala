@@ -32,7 +32,8 @@ object StreamServer {
 
   private[this] def produce(r: Random, t: Timer) {
     t.schedule(1.second.fromNow) {
-      val m = copiedBuffer(r.nextInt.toString + "\n", CharsetUtil.UTF_8)
+      val m = copiedBuffer(
+      (1 to 40).map{_ =>(r.nextInt(639) + 5120).toChar }.mkString + "\n", CharsetUtil.UTF_8)
       messages.send(m) andThen produce(r, t)
     }
   }
@@ -49,6 +50,9 @@ object StreamServer {
         new StreamResponse {
           val httpResponse = new DefaultHttpResponse(
             request.getProtocolVersion, HttpResponseStatus.OK)
+
+          httpResponse.addHeader("content-type", "text/plain; charset=utf-8")
+
           def messages = subscriber.recv
           def error = new Broker[Throwable].recv
           def release() = {
